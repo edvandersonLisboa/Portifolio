@@ -1,0 +1,83 @@
+.nav-menu {
+    list-style: none;
+    background-color: #202F46;
+    height: 100vh;
+    width: 80px;
+    justify-content: center;
+}
+
+.nav-menu ul,
+.nav-menu {
+    color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    position: relative;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-family: 'Press Start 2P';
+}
+
+.nav-menu ul {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-menu ul li {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.7em;
+    position: relative;
+}
+
+.nav-menu ul li:hover {
+    background: #6C17AF;
+    border-right: #6C17AF solid 20px;
+}
+
+.corpo-logo {
+    background-color: rgb(32, 34, 34);
+}
+
+.logo {
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.logo .E {
+    stroke: #FEFEFE;
+    stroke-width: 2px;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: lett-tracado-E 3s ease-in-out forwards 1s;
+}
+
+@keyframes lett-tracado-E {
+    to {
+        stroke-dashoffset: 0;
+        fill: #FEFEFE;
+    }
+}
+
+.logo .D {
+    stroke: #A0079A;
+    stroke-width: 2px;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: lett-tracado-D 5s ease-in-out forwards 1s;
+}
+
+@keyframes lett-tracado-D {
+    to {
+        stroke-dashoffset: 0;
+        fill: #A0079A;
+    }
+}

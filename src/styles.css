@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/css/reset.css';
+@import './assets/fonts/Press_Start_2P/stylesheet.css';
+@import './assets/fonts/Alfa_Slab_One/stylesheet.css';
