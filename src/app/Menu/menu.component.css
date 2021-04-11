@@ -11,7 +11,6 @@
     color: aliceblue;
     flex-direction: column;
     align-items: center;
-    width: 140px;
     position: relative;
 }
 
@@ -19,10 +18,14 @@
     text-decoration: none;
     color: #FEFEFE;
     font-family: 'Press Start 2P';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-menu ul {
-    height: 80%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -40,7 +43,7 @@
 
 .nav-menu ul li:hover {
     background: #6C17AF;
-    border-right: #6C17AF solid 20px;
+    border-right: #6C17AF solid;
 }
 
 .corpo-logo {
@@ -81,3 +84,48 @@
         fill: #A0079A;
     }
 }
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltipe {
+    position: absolute;
+    width: 100%;
+    top: 34%;
+    left: 80%;
+    background: #6C17AF;
+    height: 30px;
+    margin-left: 10px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.icons:hover .tooltipe {
+    visibility: visible;
+}
+
+
+/* .tooltipe::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    margin-left: -5px;
+    border-width: 5px;
+    transform: rotateZ( 90deg);
+    border-style: solid;
+    border-color: #6C17AF transparent transparent transparent;
+} */
+
+
+/* icones */

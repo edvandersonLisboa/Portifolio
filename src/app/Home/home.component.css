@@ -1,11 +1,31 @@
-.section {
+.container-fluid {
     height: 100vh;
     background-color: rgb(32, 34, 34);
     width: 100%;
+}
+
+.corpo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.corpo .texto-nome {
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+.cargo {
+    margin-top: 20px;
+    color: #565656;
+    font-size: 0.8em;
+}
+
+.corpo .texto-nome span {
+    color: purple
 }
 
 .corpo-texto {
@@ -40,12 +60,16 @@
 }
 
 .botton-img {
-    width: 200px;
-    height: 200px;
-    background: #C4C4C4;
+    background: url(../../assets/imagens/ed.png);
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 5%;
     border-radius: 200px;
     border: solid 10px #13b277;
     animation: Pulse 2s infinite;
+    background-size: cover;
+    background-position: center;
 }
 
 @keyframes Pulse {
@@ -75,17 +99,6 @@
     }
 }
 
-.corpo {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient( 180deg, #073A60 21.27%, rgba(8, 8, 9, 0) 86.19%), #000000;
-    position: relative;
-}
-
 .stars {
     width: 3px;
     height: 3px;
@@ -93,111 +106,224 @@
     box-shadow: 50px 30px white, 100px 80px white, 80px 120px white, 300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white, 320px 100px white;
 }
 
-@keyframes Atari {
+@keyframes AtariCima {
     0% {
-        bottom: 0px;
-        transform: rotate(20deg);
+        bottom: 0%;
     }
-    25% {
+    20% {
+        bottom: 20%;
+    }
+    40% {
         bottom: 40%;
-        transform: rotate(60deg);
     }
-    50% {
-        bottom: 80%;
-        transform: rotate(90deg);
+    60% {
+        bottom: 60%;
+    }
+    90% {
+        bottom: 90%;
     }
     100% {
         bottom: 100%;
-        left: 80%;
     }
 }
 
 .atari1 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariAzul.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 20px;
-    animation: Atari 20s infinite;
+    left: 10%;
+    animation: AtariCima 3s infinite;
 }
 
 .atari2 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariGreen.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 60px;
-    animation: Atari 5s infinite;
+    left: 20%;
+    animation: AtariCima 2s infinite;
 }
 
 .atari3 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariOrange.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 100px;
-    animation: Atari 6s infinite;
+    left: 5%;
+    animation: AtariCima 4s infinite;
 }
 
 .atari4 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariAzul.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 180px;
-    animation: Atari 8s infinite;
+    left: 15%;
+    animation: AtariCima 5s infinite;
 }
 
 .atari5 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariRed.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    right: 20px;
-    animation: Atari 10s infinite;
+    right: 25%;
+    animation: AtariCima 2s infinite;
 }
 
 .atari6 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariRoxo.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    right: 100px;
-    animation: Atari 9s infinite;
+    right: 10%;
+    animation: AtariCima 2s infinite;
 }
 
 .atari7 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariGreen.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    right: 180px;
-    animation: Atari 10s infinite;
+    right: 5%;
+    animation: AtariCima 6s infinite;
 }
 
 .atari8 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariRed.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    right: 250px;
-    animation: Atari 6s infinite;
+    right: 20%;
+    animation: AtariCima 4s infinite;
 }
 
 .atari9 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariOrange.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 340px;
-    animation: Atari 10s infinite;
+    right: 40%;
+    animation: AtariCima 8s infinite;
 }
 
 .atari10 {
-    background-image: url('../../assets/imagens/SpaceInvades/Atari.svg');
+    background-image: url('../../assets/imagens/SpaceInvades/AtariGreen.svg');
     width: 51px;
     height: 36px;
     position: absolute;
-    left: 600px;
-    animation: Atari 8s infinite;
+    left: 30%;
+    animation: AtariCima 6s infinite;
+}
+
+.icons {
+    font-size: 2em;
+    color: white;
+    display: flex;
+}
+
+.icons i {
+    margin: 0 8px;
+}
+
+.icons article:nth-child(1) i {
+    color: black;
+}
+
+.icons article:nth-child(2) i,
+.icons article:nth-child(5) i {
+    color: rgb(19 141 246);
+}
+
+.icons article:nth-child(4) i {
+    color: rgb(79 206 255);
+}
+
+.icons article:nth-child(3) i {
+    color: rgb(174 22 193);
+}
+
+.about {
+    position: relative;
+    top: 5%;
+    color: white;
+}
+
+.about .about-text {}
+
+.about .skill-text span {
+    color: #a0079a;
+}
+
+
+/* Card about*/
+
+.card {
+    background-color: white;
+    display: block;
+    width: 600px;
+    min-height: 90px;
+    border: 3px solid #555BFF;
+    padding: 15px;
+    margin: calc(50vh - 30px) auto 0 auto;
+    /* box-shadow: 10px -10px 0 -3px white, 10px -10px #1FC11B, 20px -20px 0 -3px white, 20px -20px #FFD913, 30px -30px 0 -3px white, 30px -30px #FF9C55, 40px -40px 0 -3px white, 40px -40px #FF5555; */
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    animation-name: identifier;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+
+/* .card:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px white, 0 0 0 0 #1FC11B, 0 0 0 -3px white, 0 0 0 0 #FFD913, 0 0 0 -3px white, 0 0 0 0 #FF9C55, 0 0 0 -3px white, 0 0 0 0 #FF5555;
+} */
+
+@keyframes identifier {
+    from {
+        top: -40px;
+        left: 40px;
+        box-shadow: 0 0 0 -3px white, 0 0 0 0 #1FC11B, 0 0 0 -3px white, 0 0 0 0 #FFD913, 0 0 0 -3px white, 0 0 0 0 #FF9C55, 0 0 0 -3px white, 0 0 0 0 #FF5555;
+    }
+    to {
+        top: 0;
+        left: 0;
+        box-shadow: 10px -10px 0 -3px white, 10px -10px #1FC11B, 20px -20px 0 -3px white, 20px -20px #FFD913, 30px -30px 0 -3px white, 30px -30px #FF9C55, 40px -40px 0 -3px white, 40px -40px #FF5555;
+    }
+}
+
+:root {
+    --primary: #555BFF;
+    --secondary: #22D2A0;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+}
+
+.about {
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: #555BFF;
+}
+
+.card p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 14px;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
 }

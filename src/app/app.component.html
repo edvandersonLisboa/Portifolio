@@ -1,7 +1,8 @@
 <main class="main">
     <app-menu></app-menu>
-    <section class="section-body">
-        <router-outlet></router-outlet>
+
+    <section id="page" class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
+        <router-outlet #myOutlet="outlet"></router-outlet>
     </section>
 
 </main>
